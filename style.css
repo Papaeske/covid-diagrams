@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f2f2f2, #fff);
+}
+
+.chart-container {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  .chart-container {
+    width: 100%;
+  }
+}
+
+.country-dropdown {
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.country-dropdown label {
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.country-dropdown select {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.country-dropdown select:hover,
+.country-dropdown select:focus {
+    border-color: #777;
+}
+
+.chart-container .legend,
+.chart-container .axis-label,
+.chart-container .title,
+.chart-container .subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chart-container .legend .legend-item,
+.chart-container .axis-tick label,
+.chart-container .label {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.chart-container .legend .legend-item,
+.chart-container .bar {
+    margin-right: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.chart-container .bar:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.chart-container .chartjs-tooltip {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    color: #fff;
+}
+
+.chart-container .chartjs-tooltip p {
+    margin: 0;
+}
+
+.chart-container .chartjs-tooltip:before {
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid rgba(0, 0, 0, 0.7);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -7px;
+    margin-top: -7px;
+}
+
+.chart-container .axis-line,
+.chart-container .axis-tick,
+.chart-container .gridline {
+    stroke: #ccc;
+}
+
+.chart-container .x-axis,
+.chart-container .y-axis,
+.chart-container .y-axis-label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.chart-container .y-axis,
+.chart-container .y-axis-label {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    text-anchor: middle;
+}
+
+.chart-dropdown {
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart-dropdown label {
+    margin-right: 10px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.chart-dropdown select {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.chart-dropdown select:hover,
+.chart-dropdown select:focus {
+    border-color: #777;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COVID-19 Stats Visualization</title>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="chart-container">
+		<canvas id="chart"></canvas>
+	</div>
+
+	<div class="chart-dropdown">
+		<label for="chart-select">Select a chart type:</label>
+		<select id="chart-select">
+			<option value="bar">Bar chart</option>
+			<option value="line">Line chart</option>
+			<option value="pie">Pie chart</option>
+		</select>
+	</div>	
+
+	<div class="country-dropdown">
+		<label for="country-select">Select a country:</label>
+		<select id="country-select">
+			<option value="">--Select--</option>
+			<option value="global">Global</option>
+		</select>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
